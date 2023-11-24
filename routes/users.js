@@ -19,4 +19,8 @@ router.post('/', (req, res) =>{
     res.send(`User with name ${user.firstName} added to the DataBase!`)
 } );
 
+router.get('/:id', (req, res) => {
+    res.send("The GET Id Route");
+})
+
 export default router;
